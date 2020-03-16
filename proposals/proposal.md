@@ -40,7 +40,8 @@ To make the website look professional.
 
 ## Wireframes
 
-Need to make the wireframe more professional
+![alt text]
+(https://github.com/abrusebas1997/Activintine/blob/master/static/images/wireframe.jpg)
 **Insert wireframe pictures here**
 
 
