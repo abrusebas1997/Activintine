@@ -6,7 +6,7 @@ Dates 3/16-3/25
 **My Name: Sebastian Abarca **<br>
 **Project Name: Activintine **<br>
 **Is your project New or Old?: New**<br>
-**Is your project Solo or Team?: Solo**><br>
+**Is your project Solo or Team?: Solo**<br>
 
 ## Description
 
@@ -40,7 +40,7 @@ To make the website look professional.
 
 ## Wireframes
 
-Need to make the wireframe professional
+Need to make the wireframe more professional
 **Insert wireframe pictures here**
 
 
