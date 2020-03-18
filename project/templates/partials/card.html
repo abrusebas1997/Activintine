@@ -1,0 +1,13 @@
+<div class="card mb-3">
+  <h5 class="card-header ">{{ activity.title }}</h5>
+  <div class="card-body border-dark">
+    <p class="card-text text-dark">
+      {{ activity.content|truncatewords_html:30 }}
+      <hr>
+      <div class="text-right"><a href="{% url 'activity-details-project' activity.slug %}" title="Read More">Read More</a></div>
+      <div class="text-left"><a href="{% url 'activity-update-project' activity.pk %}" title="Update">Update</a></div>
+  </div>
+  <div class="card-footer">
+    <small class="text-muted">Last updated  <b>{{ activity.author.username }}</b></small>
+  </div>
+</div>

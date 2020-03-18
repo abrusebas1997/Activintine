@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="row">
+    <div class="col m-4">
+      <h3>{{ activity.title }} <small class="text-muted">Last updated {{ activity.modified|date:"SHORT_DATETIME_FORMAT" }} by <b>{{ activity.author.username }}</b></small></h3>
+      <hr>
+      <p>{{ activity.content|linebreaksbr }}</p>
+      <hr>
+      <a href="{% url 'activity-list-project' %}" class="btn btn-danger ml-2">Back to List</a>
+      <a href="{% url 'payment' %}" class="btn btn-danger ml-2">Buy it</a>
+      <a href="{% url 'activity-delete-project' activity.pk %}" class="btn btn-danger ml-2">Delete</a>
+
+    </div>
+  </div>
+{% endblock %}
