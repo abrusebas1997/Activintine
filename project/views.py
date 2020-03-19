@@ -7,11 +7,8 @@ from project.forms import ActivityForm
 from project.models import Activity
 from django.http import HttpResponse, HttpResponseRedirect
 
+# instead of activities, i'm going to spell it wrong as activitys
 
-
-class Home(generic.CreateView):
-    def get(self, request):
-        return render(request, 'base.html')
 
 class ActivityListView(generic.ListView):
     """ Renders a list of all projects. """
@@ -19,9 +16,9 @@ class ActivityListView(generic.ListView):
 
     def get(self, request):
         """ GET a list of projects. """
-        activities = self.get_queryset().all()
+        activitys = self.get_queryset().all()
         return render(request, 'list.html', {
-          'activities': activities
+          'activitys': activitys
         })
 
 class ActivityDetailView(generic.DetailView):

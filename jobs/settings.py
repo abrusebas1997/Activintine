@@ -132,7 +132,7 @@ STATIC_URL = '/static/'
 
 PROJECT_ACTIVITY_TITLE_MAX_LENGTH = 600
 # Where to redirect during authentication
-LOGIN_REDIRECT_URL = reverse_lazy('code-list-project')
+LOGIN_REDIRECT_URL = reverse_lazy('activity-list-project')
 LOGOUT_REDIRECT_URL = "/"
 
 # PROTIP:

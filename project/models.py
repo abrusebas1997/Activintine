@@ -21,6 +21,7 @@ class Activity(models.Model):
     modified = models.DateTimeField(auto_now=True,
                                     help_text="The date and time this Activity was updated. Automatically generated when the model updates.")
     # image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    # video = models
 
     def __str__(self):
         return self.title
