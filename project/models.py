@@ -20,7 +20,7 @@ class Activity(models.Model):
                                    help_text="The date and time this Activity was created. Automatically generated when the model saves.")
     modified = models.DateTimeField(auto_now=True,
                                     help_text="The date and time this Activity was updated. Automatically generated when the model updates.")
-    # image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    image = models.ImageField(default='default.jpg', upload_to='activity_pic')
     # video = models
 
     def __str__(self):

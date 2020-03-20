@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h3>Activities {% if activities %}<small class="text-muted">({{ activities|length }} Activity{{ activities|length|pluralize:"s" }})</small>{% endif %}</h3>
+  <h3>activitys {% if activitys %}<small class="text-muted">({{ activitys|length }} Activity{{ activitys|length|pluralize:"s" }})</small>{% endif %}</h3>
   <hr>
-  {% if activities %}
+  {% if activitys %}
     <div class="card-columns">
-      {% for activity in activities %}
+      {% for activity in activitys %}
         {% include "partials/card.html" %}
       {% endfor %}
     </div>

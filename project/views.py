@@ -51,3 +51,8 @@ class ActivityDeleteView(generic.DeleteView):
     model = Activity
     success_url = reverse_lazy('activity-list-project')
     template_name = 'confirm_delete.html'
+
+def view_activity(request, pk=None):
+    activity = Activity.objects.get(pk=pk)
+    args = {'activity': activity}
+    return render(request, 'project/activity.html', args)

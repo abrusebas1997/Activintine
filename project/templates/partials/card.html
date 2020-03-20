@@ -4,6 +4,8 @@
     <p class="card-text text-dark">
       {{ activity.content|truncatewords_html:30 }}
       <hr>
+      <a href="{% url 'view-activity-page-pk' user.id %}" class="title">{{ activity.tittle }}</a>
+
       <div class="text-right"><a href="{% url 'activity-details-project' activity.slug %}" title="Read More">Read More</a></div>
       <div class="text-left"><a href="{% url 'activity-update-project' activity.pk %}" title="Update">Update</a></div>
   </div>
