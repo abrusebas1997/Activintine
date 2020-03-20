@@ -1,5 +1,5 @@
 # Activintine
-![alt text]()
+![alt text](https://github.com/abrusebas1997/Activintine/blob/master/static/images/logoact.png)
 
 Activintine is a website application for users to find activities to do in this Quarantine or whenever they have free time. It has video games, music, recommendations for movies, workout videos, etc.
 
